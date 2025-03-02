@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tarifs et abonnements du LGBL Virtual Experience Center">
+    <title>Tarifs - LGBL Virtual Experience Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="tarifs">
+        <h1>Tarifs & Abonnements</h1>
+
+        <div class="tariff-categories">
+
+            <!-- Licence Annuelle -->
+            <div class="tariff-card">
+                <h3>Licence Annuelle</h3>
+                <p><strong>299€ / an</strong></p>
+                <ul>
+                    <li>Accès illimité toute l'année</li>
+                    <li>Réduction sur événements spéciaux</li>
+                    <li>Tarifs préférentiels sur activités supplémentaires</li>
+                </ul>
+                <p>Stratégie à long terme : prix compétitif pour fidéliser la clientèle, maximisation de l'engagement sur une année complète.</p>
+            </div>
+
+            <!-- Pass VIP -->
+            <div class="tariff-card">
+                <h3>Pass VIP</h3>
+                <p><strong>69€ / mois</strong></p>
+                <ul>
+                    <li>Accès prioritaire aux horaires de pointe</li>
+                    <li>Accès aux zones VIP</li>
+                    <li>2 invités gratuits par mois</li>
+                    <li>Réduction sur soins bien-être</li>
+                </ul>
+                <p>Stratégie premium : ciblage des clients haut de gamme, augmentation de la rentabilité sur un segment premium.</p>
+            </div>
+
+            <!-- Pass Entreprise -->
+            <div class="tariff-card">
+                <h3>Pass Entreprise</h3>
+                <p><strong>499€ / trimestre pour 5 pers</strong></p>
+                <ul>
+                    <li>Accès illimité pour 5 personnes</li>
+                    <li>Formations et séances de groupe</li>
+                    <li>Tarifs exclusifs pour événements privés</li>
+                </ul>
+                <p>Stratégie B2B : attirer les entreprises avec une offre adaptée pour renforcer l’image de marque et la visibilité sur un marché professionnel.</p>
+            </div>
+
+            <!-- Pass Week-end Illimité -->
+            <div class="tariff-card">
+                <h3>Pass Week-end Illimité</h3>
+                <p><strong>49€ / mois</strong></p>
+                <ul>
+                    <li>Accès illimité le week-end</li>
+                    <li>Réduction sur événements du week-end</li>
+                    <li>Accès prioritaire aux réservations</li>
+                </ul>
+                <p>Stratégie d'attraction locale : prix attractif pour capter les clients locaux qui recherchent une solution flexible sans engagement annuel.</p>
+            </div>
+
+            <!-- Sessions -->
+            <div class="tariff-card">
+                <h3>Sessions de Simulation</h3>
+                <ul>
+                    <li><strong>Session rapide (10 min) - 8€</strong></li>
+                    <li><strong>Expérience standard (20 min) - 15€</strong></li>
+                    <li><strong>Immersion complète (30 min) - 22€</strong></li>
+                    <li><strong>Qualifications + Course (20 min) - 20€</strong></li>
+                    <li><strong>Qualifications + Course longue (35 min) - 30€</strong></li>
+                    <li><strong>Endurance en groupe (2h) - 110€</strong></li>
+                    <li><strong>Endurance privée (1h) - 60€</strong></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <a href="index.html">Retour à l'accueil</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 LGBL Virtual Experience Center. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
