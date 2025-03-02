@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tarifs et abonnements du LGBL Virtual Experience Center">
-    <title>Tarifs - LGBL Virtual Experience Center</title>
+    <meta name="description" content="LGBL Virtual Experience Center - Simulateurs de course et bien plus !">
+    <title>LGBL Virtual Experience Center</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -59,6 +59,8 @@
         section {
             padding: 20px;
             background-color: #fff;
+            margin: 20px;
+            border-radius: 5px;
         }
 
         .section-title {
@@ -96,19 +98,6 @@
             margin-bottom: 5px;
         }
 
-        .cta-button {
-            background-color: #0066cc;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-        }
-
-        .cta-button:hover {
-            background-color: #0055a0;
-        }
-
         .tariff-categories {
             display: flex;
             flex-wrap: wrap;
@@ -125,6 +114,16 @@
                 flex-direction: column;
             }
         }
+
+        .category-title {
+            color: #0066cc;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .category-description {
+            font-size: 1.2em;
+        }
     </style>
 </head>
 
@@ -132,14 +131,71 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Accueil</a></li>
+                <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#tarifs">Tarifs</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Tarifs -->
+    <!-- Section Accueil -->
+    <section id="accueil">
+        <h1 class="section-title">Bienvenue au LGBL Virtual Experience Center</h1>
+
+        <div class="category-title">🚗 Simulateurs de Course Professionnels</div>
+        <p class="category-description">Plongez dans une expérience de pilotage ultra-réaliste grâce à des équipements haut de gamme :</p>
+        <ul>
+            <li>Simulateurs de course avec technologies de pointe (Simagic, cockpits réglables, écrans 4K, retour de force avancé)</li>
+            <li>Simulations statiques et dynamiques adaptées à tous les niveaux</li>
+            <li>Discipline variée : F1, GT3, rallye, endurance, et moto</li>
+        </ul>
+
+        <div class="category-title">🎮 Arcade & Réalité Virtuelle</div>
+        <p class="category-description">Revivez les classiques du gaming et plongez dans la réalité virtuelle immersive :</p>
+        <ul>
+            <li>Bornes rétro et jeux de course futuristes en VR</li>
+            <li>Simulateurs de pilotage et jeux immersifs en réalité virtuelle</li>
+        </ul>
+
+        <div class="category-title">🎱 Espace de Divertissement</div>
+        <p class="category-description">Un lieu convivial pour se détendre et s’amuser entre amis ou en famille :</p>
+        <ul>
+            <li>Billard, baby-foot, machines à coups de poing, karaoké</li>
+            <li>Tournois gaming organisés et retransmissions des matchs en direct</li>
+        </ul>
+
+        <div class="category-title">🍔 Bar & Restauration</div>
+        <p class="category-description">Un espace pour se détendre autour de boissons et repas :</p>
+        <ul>
+            <li>Snacks, burgers, pizzas et menus complets</li>
+            <li>Espace lounge et service traiteur pour événements et compétitions</li>
+        </ul>
+
+        <div class="category-title">📺 Salle de Visionnage des Grands Prix & E-sport</div>
+        <p class="category-description">Diffusion en direct des plus grandes compétitions :</p>
+        <ul>
+            <li>F1, MotoGP, WEC, iRacing et plus</li>
+            <li>Ambiance immersive avec écrans géants et commentaires en direct</li>
+        </ul>
+
+        <div class="category-title">🛝 Espace Enfants</div>
+        <p class="category-description">Un espace dédié aux plus jeunes pour que toute la famille profite du complexe :</p>
+        <ul>
+            <li>Toboggans, piscine à balles, voitures électriques sur circuit</li>
+        </ul>
+
+        <div class="category-title">♿ Accessibilité PMR</div>
+        <p class="category-description">Simulateurs adaptés et espaces aménagés pour accueillir tous les publics, y compris les personnes à mobilité réduite.</p>
+
+        <div class="category-title">🔹 Une Immersion Totale dans l'Univers du Sport Automobile</div>
+        <p class="category-description">Le design moderne et industriel recrée l’atmosphère des paddocks de F1 :</p>
+        <ul>
+            <li>Décor inspiré des circuits de course</li>
+            <li>Éclairage LED dynamique et ambiance sonore immersive</li>
+        </ul>
+    </section>
+
+    <!-- Section Tarifs -->
     <section id="tarifs">
         <h1 class="section-title">Tarifs & Abonnements</h1>
 
@@ -154,7 +210,6 @@
                     <li>Réduction sur événements spéciaux</li>
                     <li>Tarifs préférentiels sur activités supplémentaires</li>
                 </ul>
-                <p>Stratégie à long terme : prix compétitif pour fidéliser la clientèle.</p>
             </div>
 
             <!-- Pass VIP -->
@@ -167,7 +222,6 @@
                     <li>2 invités gratuits par mois</li>
                     <li>Réduction sur soins bien-être</li>
                 </ul>
-                <p>Stratégie premium : ciblage des clients haut de gamme.</p>
             </div>
 
             <!-- Pass Entreprise -->
@@ -179,7 +233,6 @@
                     <li>Formations et séances de groupe</li>
                     <li>Tarifs exclusifs pour événements privés</li>
                 </ul>
-                <p>Stratégie B2B : attirer les entreprises et renforcer l'image de marque.</p>
             </div>
 
             <!-- Pass Week-end Illimité -->
@@ -191,67 +244,41 @@
                     <li>Réduction sur événements du week-end</li>
                     <li>Accès prioritaire aux réservations</li>
                 </ul>
-                <p>Stratégie locale : prix attractif pour clients recherchant flexibilité.</p>
             </div>
 
-            <!-- Session rapide -->
+            <!-- Sessions -->
             <div class="tariff-card">
-                <h3>Session rapide</h3>
-                <p><strong>10 min</strong> - 8€</p>
-                <p>Testez les sensations du simracing pour une initiation rapide.</p>
-            </div>
-
-            <!-- Expérience standard -->
-            <div class="tariff-card">
-                <h3>Expérience standard</h3>
-                <p><strong>20 min</strong> - 15€</p>
-                <p>Session plus immersive pour explorer différentes voitures et circuits.</p>
-            </div>
-
-            <!-- Immersion complète -->
-            <div class="tariff-card">
-                <h3>Immersion complète</h3>
-                <p><strong>30 min</strong> - 22€</p>
-                <p>Ressentez toute la puissance du simulateur dans une session complète.</p>
-            </div>
-
-            <!-- Qualifications + Course -->
-            <div class="tariff-card">
-                <h3>Qualifications + Course</h3>
-                <p><strong>20 min</strong> - 20€</p>
-                <p>10 minutes de qualifications suivies d’une course de 10 minutes.</p>
-            </div>
-
-            <!-- Qualifications + Course longue -->
-            <div class="tariff-card">
-                <h3>Qualifications + Course longue</h3>
-                <p><strong>35 min</strong> - 30€</p>
-                <p>Une version plus intense avec qualifications et course longue.</p>
-            </div>
-
-            <!-- Endurance en groupe -->
-            <div class="tariff-card">
-                <h3>Endurance (en groupe)</h3>
-                <p><strong>2h</strong> - 110€</p>
-                <p>Une expérience en équipe avec relais, idéale pour les groupes.</p>
-            </div>
-
-            <!-- Endurance privée -->
-            <div class="tariff-card">
-                <h3>Endurance privée</h3>
-                <p><strong>1h</strong> - 60€</p>
-                <p>Session longue, seul ou en duo, pour tester vos limites.</p>
+                <h3>Sessions de Simulation</h3>
+                <ul>
+                    <li><strong>Session rapide (10 min) - 8€</strong></li>
+                    <li><strong>Expérience standard (20 min) - 15€</strong></li>
+                    <li><strong>Immersion complète (30 min) - 22€</strong></li>
+                    <li><strong>Qualifications + Course (20 min) - 20€</strong></li>
+                    <li><strong>Qualifications + Course longue (35 min) - 30€</strong></li>
+                    <li><strong>Endurance en groupe (2h) - 110€</strong></li>
+                    <li><strong>Endurance privée (1h) - 60€</strong></li>
+                </ul>
             </div>
 
         </div>
 
-        <a href="#home" class="cta-button">Retour à l'accueil</a>
+        <a href="#accueil" class="cta-button">Retour à l'accueil</a>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h1 class="section-title">Contact</h1>
+        <p>Pour toute question ou demande, contactez-nous :</p>
+        <ul>
+            <li>Téléphone : <strong>06.20.78.01.19</strong></li>
+            <li>Email : <strong>lucasgaly.ledjeu@gmail.com</strong></li>
+            <li>Adresse : 1 rue de la course, 75000 Paris, France</li>
+        </ul>
     </section>
 
     <footer>
         <p>&copy; 2025 LGBL Virtual Experience Center. Tous droits réservés.</p>
     </footer>
-
 </body>
 
 </html>
