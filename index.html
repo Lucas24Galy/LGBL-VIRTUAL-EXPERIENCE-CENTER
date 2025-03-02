@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bienvenue au LGBL Virtual Experience Center. Plongez dans notre univers virtuel!">
+    <meta name="description" content="Bienvenue au LGBL Virtual Experience Center. Plongez dans une expérience immersive unique.">
     <title>LGBL Virtual Experience Center</title>
     <style>
         /* Général */
@@ -12,13 +12,13 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0;
             color: #333;
         }
 
         header {
-            background-color: #222;
-            padding: 10px 0;
+            background-color: #1f1f1f;
+            padding: 20px;
         }
 
         nav ul {
@@ -33,12 +33,13 @@
         }
 
         nav ul li a {
-            color: white;
+            color: #fff;
             text-decoration: none;
+            font-size: 18px;
         }
 
         footer {
-            background-color: #222;
+            background-color: #1f1f1f;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -54,31 +55,73 @@
 
         .hero {
             text-align: center;
-            padding: 50px 0;
-            background-color: #e6e6e6;
+            padding: 50px 20px;
+            background-color: #444;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3em;
         }
 
         section {
             padding: 20px;
+            background-color: #fff;
         }
 
         .about, .services, .contact {
             text-align: center;
         }
 
-        form input,
-        form textarea {
-            width: 100%;
-            padding: 10px;
+        .services ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .services li {
             margin-bottom: 10px;
         }
 
-        form button {
+        .services a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #0055a0;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact form button {
             background-color: #0066cc;
             color: white;
             padding: 10px 20px;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
+        }
+
+        .contact form button:hover {
+            background-color: #0055a0;
+        }
+
+        .footer-socials a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 1.2em;
+        }
+
+        .footer-socials a:hover {
+            color: #00aaff;
         }
 
         /* Responsive */
@@ -87,6 +130,38 @@
                 display: block;
                 margin-bottom: 10px;
             }
+
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .services ul {
+                padding-left: 20px;
+                text-align: left;
+            }
+        }
+
+        /* Styles supplémentaires */
+        .highlight {
+            color: #ff6600;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #0066cc;
+        }
+
+        .service-title {
+            font-size: 1.5em;
+            color: #0066cc;
+        }
+
+        .content-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -106,30 +181,46 @@
     <!-- Accueil -->
     <section id="home" class="hero">
         <h1>Bienvenue au LGBL Virtual Experience Center</h1>
-        <p>Découvrez un monde virtuel unique qui repousse les limites de l'expérience numérique.</p>
+        <p>Plongez dans une expérience immersive unique qui repousse les limites de la réalité virtuelle et du sport automobile.</p>
         <a href="#services" class="cta-button">Explorer nos services</a>
     </section>
 
     <!-- À propos -->
-    <section id="about" class="about">
-        <h1>À propos de LGBL Virtual Experience Center</h1>
-        <p>Le LGBL Virtual Experience Center est un centre innovant où nous mettons en valeur les technologies de réalité virtuelle
-            pour offrir des expériences immersives et éducatives. Explorez, apprenez et vivez des expériences qui redéfinissent le futur!</p>
+    <section id="about" class="about content-section">
+        <h1 class="section-title">À propos de LGBL Virtual Experience Center</h1>
+        <p>Le LGBL Virtual Experience Center offre des expériences immersives en réalité virtuelle et simulateurs de course professionnels. Découvrez une ambiance inspirée des paddocks de F1, avec des équipements dernier cri pour une immersion totale.</p>
     </section>
 
     <!-- Services -->
-    <section id="services" class="services">
-        <h1>Nos Services</h1>
-        <ul>
-            <li>Expériences immersives en réalité virtuelle</li>
-            <li>Ateliers éducatifs et formation VR</li>
-            <li>Développement de contenu personnalisé</li>
-        </ul>
+    <section id="services" class="services content-section">
+        <h1 class="section-title">Nos Services</h1>
+
+        <h2 class="service-title">🚗 Simulateurs de Course Professionnels</h2>
+        <p>Plongez dans une expérience de pilotage ultra-réaliste grâce à des équipements haut de gamme : simulateurs de course avec technologies de pointe (Simagic, cockpits réglables, écrans immersifs 4K, retour de force avancé).</p>
+        <p>Disciplines disponibles : F1, GT3, rallye, endurance et moto.</p>
+
+        <h2 class="service-title">🎮 Arcade & Réalité Virtuelle</h2>
+        <p>Retrouvez les classiques du gaming avec nos bornes rétro et vivez des expériences immersives en VR avec des simulateurs de pilotage et des jeux futuristes.</p>
+
+        <h2 class="service-title">🎱 Espace de Divertissement</h2>
+        <p>Un lieu convivial pour se détendre et s’amuser entre amis ou en famille : billard, baby-foot, karaoké et bien plus encore !</p>
+
+        <h2 class="service-title">🍔 Bar & Restauration</h2>
+        <p>Un bar avec une offre variée de boissons et snacks. Espace lounge pour se détendre, ainsi qu’un service traiteur pour événements et compétitions.</p>
+
+        <h2 class="service-title">📺 Salle de Visionnage des Grands Prix & E-sport</h2>
+        <p>Assistez aux plus grandes compétitions en direct, comme la F1, MotoGP, et esports, dans une ambiance immersive avec écrans géants et commentaires en direct.</p>
+
+        <h2 class="service-title">🛝 Espace Enfants</h2>
+        <p>Un espace dédié aux plus jeunes, avec toboggans, piscine à balles et un circuit de voitures électriques.</p>
+
+        <h2 class="service-title">♿ Accessibilité PMR</h2>
+        <p>Simulateurs adaptés aux personnes à mobilité réduite et espaces aménagés pour garantir l'accessibilité à tous.</p>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="contact">
-        <h1>Contactez-nous</h1>
+    <section id="contact" class="contact content-section">
+        <h1 class="section-title">Contactez-nous</h1>
         <form action="submit_form.php" method="POST">
             <label for="name">Nom :</label>
             <input type="text" id="name" name="name" required>
@@ -139,6 +230,15 @@
             <textarea id="message" name="message" required></textarea>
             <button type="submit">Envoyer</button>
         </form>
+
+        <div class="footer-socials">
+            <p>Contactez-nous :</p>
+            <p>📞 06.20.78.01.19 | ✉️ lucasgaly.47510@gmail.com</p>
+            <p>Suivez-nous sur les réseaux sociaux : </p>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
     </section>
 
     <footer>
@@ -146,7 +246,6 @@
     </footer>
 
     <script>
-        // Affichage d'un message dans la console
         console.log("LGBL Virtual Experience Center - Site Chargé!");
     </script>
 </body>
