@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contactez le LGBL Virtual Experience Center">
+    <meta name="description" content="Contactez-nous - LGBL Virtual Experience Center">
     <title>Contact - LGBL Virtual Experience Center</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -21,13 +21,33 @@
     </header>
 
     <section id="contact">
-        <h1>Contact</h1>
-        <p>Pour toute question ou demande, contactez-nous :</p>
-        <ul>
-            <li>Téléphone : <strong>06.20.78.01.19</strong></li>
-            <li>Email : <strong>lucasgaly.ledjeu@gmail.com</strong></li>
-            <li>Adresse : 1 rue de la course, 75000 Paris, France</li>
-        </ul>
+        <h1>Contactez-Nous</h1>
+
+        <p>Vous avez des questions ou vous souhaitez en savoir plus ? N'hésitez pas à nous contacter !</p>
+
+        <h2>Coordonnées</h2>
+        <p>Email : <a href="mailto:lucasgaly.47510@gmail.com">lucasgaly.47510@gmail.com</a></p>
+        <p>Téléphone : <a href="tel:+33620780119">06.20.78.01.19</a></p>
+
+        <h2>Formulaire de Contact</h2>
+        <form action="send-message.php" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <label for="sponsor">Êtes-vous intéressé par un sponsoring ?</label>
+            <input type="checkbox" id="sponsor" name="sponsor">
+
+            <button type="submit">Envoyer</button>
+        </form>
+
+        <p>Vous pouvez aussi nous contacter via les coordonnées ci-dessus ou remplir ce formulaire et nous reviendrons vers vous dans les plus brefs délais.</p>
+
     </section>
 
     <footer>
