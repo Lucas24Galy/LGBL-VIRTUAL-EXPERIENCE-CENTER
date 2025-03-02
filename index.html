@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenue au LGBL Virtual Experience Center. Plongez dans notre univers virtuel!">
+    <title>LGBL Virtual Experience Center</title>
+    <style>
+        /* Général */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #222;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .cta-button {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #e6e6e6;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .about, .services, .contact {
+            text-align: center;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        form button {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Accueil -->
+    <section id="home" class="hero">
+        <h1>Bienvenue au LGBL Virtual Experience Center</h1>
+        <p>Découvrez un monde virtuel unique qui repousse les limites de l'expérience numérique.</p>
+        <a href="#services" class="cta-button">Explorer nos services</a>
+    </section>
+
+    <!-- À propos -->
+    <section id="about" class="about">
+        <h1>À propos de LGBL Virtual Experience Center</h1>
+        <p>Le LGBL Virtual Experience Center est un centre innovant où nous mettons en valeur les technologies de réalité virtuelle
+            pour offrir des expériences immersives et éducatives. Explorez, apprenez et vivez des expériences qui redéfinissent le futur!</p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <h1>Nos Services</h1>
+        <ul>
+            <li>Expériences immersives en réalité virtuelle</li>
+            <li>Ateliers éducatifs et formation VR</li>
+            <li>Développement de contenu personnalisé</li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h1>Contactez-nous</h1>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 LGBL Virtual Experience Center. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Affichage d'un message dans la console
+        console.log("LGBL Virtual Experience Center - Site Chargé!");
+    </script>
+</body>
+
+</html>
