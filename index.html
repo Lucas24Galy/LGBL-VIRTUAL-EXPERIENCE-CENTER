@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bienvenue au LGBL Virtual Experience Center. Plongez dans une expérience immersive unique.">
-    <title>LGBL Virtual Experience Center</title>
+    <meta name="description" content="Tarifs et abonnements du LGBL Virtual Experience Center">
+    <title>Tarifs - LGBL Virtual Experience Center</title>
     <style>
-        /* Général */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -53,97 +52,13 @@
             border-radius: 5px;
         }
 
-        .hero {
-            text-align: center;
-            padding: 50px 20px;
-            background-color: #444;
-            color: white;
-        }
-
-        .hero h1 {
-            font-size: 3em;
+        .cta-button:hover {
+            background-color: #0055a0;
         }
 
         section {
             padding: 20px;
             background-color: #fff;
-        }
-
-        .about, .services, .contact {
-            text-align: center;
-        }
-
-        .services ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .services li {
-            margin-bottom: 10px;
-        }
-
-        .services a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-
-        .cta-button:hover {
-            background-color: #0055a0;
-        }
-
-        .contact form input,
-        .contact form textarea {
-            width: 80%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .contact form button {
-            background-color: #0066cc;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .contact form button:hover {
-            background-color: #0055a0;
-        }
-
-        .footer-socials a {
-            color: white;
-            text-decoration: none;
-            margin-right: 20px;
-            font-size: 1.2em;
-        }
-
-        .footer-socials a:hover {
-            color: #00aaff;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            nav ul li {
-                display: block;
-                margin-bottom: 10px;
-            }
-
-            .hero h1 {
-                font-size: 2em;
-            }
-
-            .services ul {
-                padding-left: 20px;
-                text-align: left;
-            }
-        }
-
-        /* Styles supplémentaires */
-        .highlight {
-            color: #ff6600;
         }
 
         .section-title {
@@ -152,16 +67,63 @@
             color: #0066cc;
         }
 
-        .service-title {
-            font-size: 1.5em;
-            color: #0066cc;
-        }
-
-        .content-section {
-            background-color: #f9f9f9;
+        .tariff-card {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
             padding: 20px;
             margin-bottom: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tariff-card h3 {
+            color: #0066cc;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .tariff-card p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .tariff-card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .tariff-card ul li {
+            margin-bottom: 5px;
+        }
+
+        .cta-button {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
             border-radius: 5px;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: #0055a0;
+        }
+
+        .tariff-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .tariff-categories div {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        @media (max-width: 768px) {
+            .tariff-categories {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -171,83 +133,125 @@
         <nav>
             <ul>
                 <li><a href="#home">Accueil</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#tarifs">Tarifs</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Accueil -->
-    <section id="home" class="hero">
-        <h1>Bienvenue au LGBL Virtual Experience Center</h1>
-        <p>Plongez dans une expérience immersive unique qui repousse les limites de la réalité virtuelle et du sport automobile.</p>
-        <a href="#services" class="cta-button">Explorer nos services</a>
-    </section>
+    <!-- Tarifs -->
+    <section id="tarifs">
+        <h1 class="section-title">Tarifs & Abonnements</h1>
 
-    <!-- À propos -->
-    <section id="about" class="about content-section">
-        <h1 class="section-title">À propos de LGBL Virtual Experience Center</h1>
-        <p>Le LGBL Virtual Experience Center offre des expériences immersives en réalité virtuelle et simulateurs de course professionnels. Découvrez une ambiance inspirée des paddocks de F1, avec des équipements dernier cri pour une immersion totale.</p>
-    </section>
+        <div class="tariff-categories">
 
-    <!-- Services -->
-    <section id="services" class="services content-section">
-        <h1 class="section-title">Nos Services</h1>
+            <!-- Licence Annuelle -->
+            <div class="tariff-card">
+                <h3>Licence Annuelle</h3>
+                <p><strong>299€ / an</strong></p>
+                <ul>
+                    <li>Accès illimité toute l'année</li>
+                    <li>Réduction sur événements spéciaux</li>
+                    <li>Tarifs préférentiels sur activités supplémentaires</li>
+                </ul>
+                <p>Stratégie à long terme : prix compétitif pour fidéliser la clientèle.</p>
+            </div>
 
-        <h2 class="service-title">🚗 Simulateurs de Course Professionnels</h2>
-        <p>Plongez dans une expérience de pilotage ultra-réaliste grâce à des équipements haut de gamme : simulateurs de course avec technologies de pointe (Simagic, cockpits réglables, écrans immersifs 4K, retour de force avancé).</p>
-        <p>Disciplines disponibles : F1, GT3, rallye, endurance et moto.</p>
+            <!-- Pass VIP -->
+            <div class="tariff-card">
+                <h3>Pass VIP</h3>
+                <p><strong>69€ / mois</strong></p>
+                <ul>
+                    <li>Accès prioritaire aux horaires de pointe</li>
+                    <li>Accès aux zones VIP</li>
+                    <li>2 invités gratuits par mois</li>
+                    <li>Réduction sur soins bien-être</li>
+                </ul>
+                <p>Stratégie premium : ciblage des clients haut de gamme.</p>
+            </div>
 
-        <h2 class="service-title">🎮 Arcade & Réalité Virtuelle</h2>
-        <p>Retrouvez les classiques du gaming avec nos bornes rétro et vivez des expériences immersives en VR avec des simulateurs de pilotage et des jeux futuristes.</p>
+            <!-- Pass Entreprise -->
+            <div class="tariff-card">
+                <h3>Pass Entreprise</h3>
+                <p><strong>499€ / trimestre pour 5 pers</strong></p>
+                <ul>
+                    <li>Accès illimité pour 5 personnes</li>
+                    <li>Formations et séances de groupe</li>
+                    <li>Tarifs exclusifs pour événements privés</li>
+                </ul>
+                <p>Stratégie B2B : attirer les entreprises et renforcer l'image de marque.</p>
+            </div>
 
-        <h2 class="service-title">🎱 Espace de Divertissement</h2>
-        <p>Un lieu convivial pour se détendre et s’amuser entre amis ou en famille : billard, baby-foot, karaoké et bien plus encore !</p>
+            <!-- Pass Week-end Illimité -->
+            <div class="tariff-card">
+                <h3>Pass Week-end Illimité</h3>
+                <p><strong>49€ / mois</strong></p>
+                <ul>
+                    <li>Accès illimité le week-end</li>
+                    <li>Réduction sur événements du week-end</li>
+                    <li>Accès prioritaire aux réservations</li>
+                </ul>
+                <p>Stratégie locale : prix attractif pour clients recherchant flexibilité.</p>
+            </div>
 
-        <h2 class="service-title">🍔 Bar & Restauration</h2>
-        <p>Un bar avec une offre variée de boissons et snacks. Espace lounge pour se détendre, ainsi qu’un service traiteur pour événements et compétitions.</p>
+            <!-- Session rapide -->
+            <div class="tariff-card">
+                <h3>Session rapide</h3>
+                <p><strong>10 min</strong> - 8€</p>
+                <p>Testez les sensations du simracing pour une initiation rapide.</p>
+            </div>
 
-        <h2 class="service-title">📺 Salle de Visionnage des Grands Prix & E-sport</h2>
-        <p>Assistez aux plus grandes compétitions en direct, comme la F1, MotoGP, et esports, dans une ambiance immersive avec écrans géants et commentaires en direct.</p>
+            <!-- Expérience standard -->
+            <div class="tariff-card">
+                <h3>Expérience standard</h3>
+                <p><strong>20 min</strong> - 15€</p>
+                <p>Session plus immersive pour explorer différentes voitures et circuits.</p>
+            </div>
 
-        <h2 class="service-title">🛝 Espace Enfants</h2>
-        <p>Un espace dédié aux plus jeunes, avec toboggans, piscine à balles et un circuit de voitures électriques.</p>
+            <!-- Immersion complète -->
+            <div class="tariff-card">
+                <h3>Immersion complète</h3>
+                <p><strong>30 min</strong> - 22€</p>
+                <p>Ressentez toute la puissance du simulateur dans une session complète.</p>
+            </div>
 
-        <h2 class="service-title">♿ Accessibilité PMR</h2>
-        <p>Simulateurs adaptés aux personnes à mobilité réduite et espaces aménagés pour garantir l'accessibilité à tous.</p>
-    </section>
+            <!-- Qualifications + Course -->
+            <div class="tariff-card">
+                <h3>Qualifications + Course</h3>
+                <p><strong>20 min</strong> - 20€</p>
+                <p>10 minutes de qualifications suivies d’une course de 10 minutes.</p>
+            </div>
 
-    <!-- Contact -->
-    <section id="contact" class="contact content-section">
-        <h1 class="section-title">Contactez-nous</h1>
-        <form action="submit_form.php" method="POST">
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
+            <!-- Qualifications + Course longue -->
+            <div class="tariff-card">
+                <h3>Qualifications + Course longue</h3>
+                <p><strong>35 min</strong> - 30€</p>
+                <p>Une version plus intense avec qualifications et course longue.</p>
+            </div>
 
-        <div class="footer-socials">
-            <p>Contactez-nous :</p>
-            <p>📞 06.20.78.01.19 | ✉️ lucasgaly.47510@gmail.com</p>
-            <p>Suivez-nous sur les réseaux sociaux : </p>
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <!-- Endurance en groupe -->
+            <div class="tariff-card">
+                <h3>Endurance (en groupe)</h3>
+                <p><strong>2h</strong> - 110€</p>
+                <p>Une expérience en équipe avec relais, idéale pour les groupes.</p>
+            </div>
+
+            <!-- Endurance privée -->
+            <div class="tariff-card">
+                <h3>Endurance privée</h3>
+                <p><strong>1h</strong> - 60€</p>
+                <p>Session longue, seul ou en duo, pour tester vos limites.</p>
+            </div>
+
         </div>
+
+        <a href="#home" class="cta-button">Retour à l'accueil</a>
     </section>
 
     <footer>
         <p>&copy; 2025 LGBL Virtual Experience Center. Tous droits réservés.</p>
     </footer>
 
-    <script>
-        console.log("LGBL Virtual Experience Center - Site Chargé!");
-    </script>
 </body>
 
 </html>
